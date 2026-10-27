@@ -11,4 +11,5 @@ fastchess
 *.dSYM/
 *.txt
 *.sh
+*.pch
 .DS_Store

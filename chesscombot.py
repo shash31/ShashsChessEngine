@@ -12,7 +12,7 @@ OPP_DIFFICULTY = "25"
 # 25: 3200
 
 engine = subprocess.Popen(
-    ['./myengine'],
+    ['./rfp_engine'],
     stdin=subprocess.PIPE,
     stdout=subprocess.PIPE,
     stderr=subprocess.PIPE,
