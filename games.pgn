@@ -1,0 +1,229 @@
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.11"]
+[Round "?"]
+[White "null"]
+[Black "Master"]
+[Result "0-1"]
+[BlackElo "2400"]
+[WhiteElo "null"]
+[Termination "by checkmate"]
+[ECO "B23"]
+[EndDate "2026.10.11"]
+
+1. e4 c5 2. Nc3 Nc6 3. Nf3 Nf6 4. Bd3 d6 5. O-O Bd7 6. Bc4 h6 7. d3 g5 8. d4 g4
+9. d5 Na5 10. Nd2 Nxc4 11. Nxc4 b5 12. e5 Ng8 13. e6 bxc4 14. exd7+ Qxd7 15. Qe2
+Bg7 16. Qxc4 Nf6 17. Be3 O-O 18. Rad1 Rab8 19. b3 Qf5 20. Qd3 Qg6 21. Qxg6 fxg6
+22. a4 a6 23. Ne2 g5 24. Ng3 Nd7 25. Rfe1 Be5 26. a5 Rb4 27. Bd2 Rd4 28. Be3
+Rxd1 29. Rxd1 Kh7 30. Ne4 Kg7 31. h3 gxh3 32. gxh3 Nf6 33. Nxf6 Kxf6 34. Kg2 Kg6
+35. Rd3 Rf5 36. Kf1 Kh5 37. Ke2 Kh4 38. Kf1 Bf4 39. Bxf4 gxf4 40. Ke2 Re5+ 41.
+Kf3 Kxh3 42. Rd1 Kh2 43. Rd2 h5 44. Kxf4 Kg2 45. c4 Kf1 46. Kg3 Ke1 47. Rd3 Ke2
+48. Rc3 Kd2 49. Rf3 Re4 50. Rf8 Kc3 51. Rb8 Rg4+ 52. Kh3 Rd4 53. Rb6 Rf4 54. Kg2
+Rg4+ 55. Kh2 h4 56. Rb7 Rf4 57. Kg2 Rf7 58. Rb6 Rf4 59. f3 Kc2 60. Kh3 Rxf3+ 61.
+Kxh4 Rxb3 62. Rxa6 Kd3 63. Ra7 Kxc4 64. Rxe7 Ra3 65. Ra7 Kxd5 66. a6 c4 67. Kg5
+Kd4 68. Rc7 Rxa6 69. Rh7 c3 70. Rh4+ Kd3 71. Rh3+ Kc4 72. Rh2 d5 73. Kf4 d4 74.
+Rh7 d3 75. Rc7+ Kb3 76. Ke3 d2 77. Rd7 Re6+ 78. Kf4 c2 79. Rd3+ Kc4 80. Rxd2
+c1=Q 81. Kf5 Qe1 82. Rc2+ Kb3 83. Rb2+ Kxb2 84. Kf4 Qe4+ 85. Kg3 Rg6+ 86. Kf2
+Rg2+ 87. Kf1 Qe2#
+0-1
+
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.11"]
+[Round "?"]
+[White "null"]
+[Black "Master"]
+[Result "1-0"]
+[BlackElo "2400"]
+[WhiteElo "null"]
+[Termination "by checkmate"]
+[ECO "B50"]
+[EndDate "2026.10.11"]
+
+1. e4 c5 2. Nc3 d6 3. Nf3 Nf6 4. Bc4 Nc6 5. O-O a6 6. d3 b5 7. Bb3 Bg4 8. h3
+Bxf3 9. Qxf3 e6 10. Be3 Be7 11. a4 Nd4 12. Bxd4 cxd4 13. Ne2 e5 14. c3 O-O 15.
+cxd4 h6 16. d5 Qb6 17. a5 Qc5 18. Ng3 g6 19. Rfc1 Qb4 20. Rc7 Qxb3 21. Rxe7 Qxb2
+22. Rd1 Kg7 23. h4 Qc3 24. h5 Rfe8 25. hxg6 Rxe7 26. Nf5+ Kf8 27. g7+ Kg8 28.
+Nxe7+ Kxg7 29. Nf5+ Kf8 30. Qe3 Ng4 31. Qh3 Qc2 32. Qxg4 Rd8 33. Nxh6 Ke8 34.
+Nf5 b4 35. Rf1 Qc7 36. Qg5 Kf8 37. Rc1 Qxc1+ 38. Qxc1 f6 39. Qh6+ Ke8 40. Qg7
+Rc8 41. Qe7# 
+1-0
+
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.15"]
+[Round "?"]
+[White "null"]
+[Black "Master"]
+[Result "1/2-1/2"]
+[BlackElo "2500"]
+[WhiteElo "null"]
+[Termination "by repetition"]
+[ECO "C47"]
+[EndDate "2026.10.15"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bd3 Bc5 5. O-O O-O 6. Nd5 d6 7. c3 a5 8. Bc2
+Bg4 9. d3 Nxd5 10. exd5 Ne7 11. h3 Bh5 12. d4 exd4 13. cxd4 Bb6 14. Bxh7+ Kh8
+15. Be4 f5 16. Bc2 Nxd5 17. Bxf5 Rxf5 18. g4 Rf8 19. gxh5 Rf5 20. h4 Qf6 21. Bg5
+Qf7 22. Nd2 Bxd4 23. Ne4 Bxb2 24. Rb1 Be5 25. Rxb7 Nf4 26. Qg4 Rf8 27. h6 Nd3
+28. hxg7+ Qxg7 29. Rb8 Rxb8 30. Qxf5 Rf8 31. Qh3 Nf4 32. Qf3 Qg6 33. Re1 Qe6 34.
+Bxf4 Bxf4 35. Qh5+ Bh6 36. Re2 c6 37. Ng3 Qf6 38. Nf5 Qxf5 39. Qxh6+ Kg8 40.
+Qxd6 c5 41. Qg3+ Kh8 42. Re5 Qf3 43. Qxf3 Rxf3 44. Rxc5 Ra3 45. Rc7 Rxa2 46. Kg2
+a4 47. Ra7 a3 48. h5 Kg8 49. Kf3 Ra1 50. Kg2 a2 51. f4 Kh8 52. f5 Kg8 53. f6 Rd1
+54. Rxa2 Rd5 55. Ra6 Rxh5 56. Kg3 Kf7 57. Kf4 Rh2 58. Rc6 Rf2+ 59. Kg5 Rg2+ 60.
+Kh5 Rh2+ 61. Kg5 Rg2+ 62. Kf4 Rf2+ 63. Kg5 Rg2+
+1/2-1/2
+
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.15"]
+[Round "?"]
+[White "null"]
+[Black "Master"]
+[Result "1-0"]
+[BlackElo "2500"]
+[WhiteElo "null"]
+[Termination "by checkmate"]
+[ECO "B46"]
+[EndDate "2026.10.15"]
+
+1. e4 c5 2. Nc3 e6 3. Nf3 Nc6 4. d4 cxd4 5. Nxd4 a6 6. Nxc6 bxc6 7. Bd3 d5 8.
+O-O Nf6 9. Bf4 Qb6 10. Rb1 Nd7 11. Na4 Qd4 12. c3 Qf6 13. Bc7 Be7 14. Qc2 e5 15.
+Rbd1 Qh6 16. Qb3 Ra7 17. Bb6 Rb7 18. Be3 Rxb3 19. Bxh6 Rxb2 20. Bxg7 Rg8 21.
+Nxb2 Rxg7 22. Rfe1 d4 23. cxd4 exd4 24. Nc4 Nc5 25. Be2 Ne6 26. Rb1 Nf4 27. g3
+Nxe2+ 28. Rxe2 Kd7 29. Nb6+ Kc7 30. Nxc8 Kxc8 31. Reb2 a5 32. Rb8+ Kd7 33. R1b7+
+Ke6 34. Rc8 Kd6 35. e5+ Ke6 36. Rxc6+ Kd5 37. Ra6 Bf8 38. Rxa5+ Ke4 39. Rd7 d3
+40. Ra8 Bc5 41. e6 d2 42. e7 Bxe7 43. Rxe7+ Kf5 44. Rd7 Rg4 45. Rxd2 Rc4 46. Rd7
+Ke6 47. Raa7 f6 48. Rxh7 f5 49. Rh6+ Kd5 50. Ra5+ Rc5 51. Rxc5+ Kxc5 52. h4 Kd4
+53. h5 f4 54. gxf4 Kc4 55. Re6 Kc3 56. h6 Kb2 57. h7 Kxa2 58. Rb6 Ka3 59. h8=Q
+Ka4 60. Qa1# 
+1-0
+
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.15"]
+[Round "?"]
+[White "null"]
+[Black "Grandmaster"]
+[Result "0-1"]
+[BlackElo "2600"]
+[WhiteElo "null"]
+[Termination "by checkmate"]
+[ECO "B23"]
+[EndDate "2026.10.15"]
+
+1. Nf3 c5 2. e4 d6 3. Nc3 Nc6 4. Bc4 e5 5. d3 Be7 6. Nd5 Nf6 7. O-O O-O 8. Nxe7+
+Qxe7 9. Be3 Be6 10. Bxe6 fxe6 11. c3 d5 12. Qc2 h6 13. Rad1 a6 14. exd5 exd5 15.
+Nh4 Qd6 16. h3 d4 17. Bd2 Nd7 18. Qb3+ Kh7 19. a4 b5 20. axb5 axb5 21. Nf3 Rab8
+22. Rfe1 Rxf3 23. gxf3 c4 24. dxc4 Nc5 25. Qc2+ d3 26. Qb1 bxc4 27. Qa2 Nb3 28.
+Qa4 Nca5 29. Re4 Qf6 30. Re3 Qf5 31. Kg2 Rb6 32. Kh2 Rg6 33. h4 e4 34. Qe8 exf3
+35. Qe4 Rg2+ 36. Kh1 Qxe4 37. Rxe4 Rxf2 38. Bf4 Rxb2 39. Re3 Nd2 40. Bg3 Rb1 41.
+Rde1 Nf1 42. Rxb1 Nxe3 43. Be1 Nb3 44. Kg1 d2 45. Kf2 d1=Q 46. Rxd1 Nxd1+ 47.
+Kxf3 Kg6 48. Ke4 Kh5 49. Kf3 Nc5 50. Ke2 Nd3 51. Kxd1 Nxe1 52. Kxe1 Kxh4 53. Kf2
+h5 54. Ke3 Kg3 55. Kd4 h4 56. Kxc4 h3 57. Kb5 h2 58. Kc5 g5 59. c4 g4 60. Kd6
+Kf4 61. c5 g3 62. c6 g2 63. c7 g1=Q 64. c8=Q Qd4+ 65. Ke7 Qe5+ 66. Kd7 Qd5+ 67.
+Kc7 Qe5+ 68. Kb6 Qb2+ 69. Ka5 Qd2+ 70. Kb5 Qb2+ 71. Ka4 Qa2+ 72. Kb5 Qb1+ 73.
+Ka6 Qa2+ 74. Kb6 Qb2+ 75. Kc7 h1=Q 76. Qf8+ Ke3 77. Qe7+ Kf3 78. Qf7+ Kg3 79.
+Qg6+ Kf4 80. Qf7+ Kg5 81. Qg8+ Kh6 82. Qe6+ Kg5 83. Qe3+ Kf5 84. Qh6 Qxh6 85.
+Kd7 Qb8 86. Ke7 Qh7#
+0-1
+
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.15"]
+[Round "?"]
+[White "null"]
+[Black "Grandmaster"]
+[Result "1-0"]
+[BlackElo "2600"]
+[WhiteElo "null"]
+[Termination "by checkmate"]
+[ECO "C47"]
+[EndDate "2026.10.15"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Be2 Bc5 5. Nxe5 Nxe5 6. d4 Bd6 7. dxe5 Bxe5 8.
+Bf3 O-O 9. O-O d6 10. Be3 Re8 11. Bd4 h6 12. Bxe5 Rxe5 13. Qd3 Qe8 14. Rad1 Bd7
+15. Nd5 Nxd5 16. exd5 Qe7 17. Qb3 b6 18. Qc4 Re8 19. Qa6 Qd8 20. c3 Qc8 21. Qc4
+a5 22. b4 b5 23. Qf4 Qa6 24. a3 Bf5 25. h3 Bc2 26. Rd4 Bb3 27. Qd2 Bc4 28. Rc1
+axb4 29. axb4 Qa8 30. Rg4 h5 31. Rd4 R8e7 32. Kh2 Qe8 33. Qf4 Qa8 34. Qd2 Re8
+35. g3 Qc8 36. Ra1 Qf5 37. Rf4 Qc8 38. Kg2 R8e7 39. Rh4 g6 40. Qd4 Re8 41. Ra7
+Qd7 42. Kh2 Qe7 43. Rb7 Re1 44. Rf4 f5 45. Kg2 Rb1 46. Qd2 Re1 47. Rd4 Kh7 48.
+Ra7 Bf1+ 49. Kh2 Bc4 50. Kg2 Bf1+ 51. Kh2 Qd7 52. Rh4 Bc4 53. Bxh5 gxh5 54.
+Rxh5+ Kg8 55. Qh6 Qg7 56. Rg5 R1e7 57. Rxg7+ Rxg7 58. Rb7 Rf8 59. Qe6+ Kh8 60.
+h4 Rh7 61. Kg2 Rg7 62. h5 f4 63. h6 Rgf7 64. Rb8 Rxb8 65. Qxf7 Rg8 66. Qf5 fxg3
+67. fxg3 Bb3 68. g4 Bxd5+ 69. Qxd5 Rxg4+ 70. Kf3 Rg6 71. Qxb5 c5 72. Qe8+ Kh7
+73. Qxg6+ Kxg6 74. b5 Kxh6 75. b6 Kg6 76. c4 d5 77. cxd5 Kf7 78. b7 Ke7 79. b8=Q
+Kd7 80. Kf4 c4 81. Ke5 Ke7 82. Qb7+ Kf8 83. Kf6 Kg8 84. Qg7# 
+1-0
+
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.16"]
+[Round "?"]
+[White "null"]
+[Black "Grandmaster"]
+[Result "1-0"]
+[BlackElo "2700"]
+[WhiteElo "null"]
+[Termination "by checkmate"]
+[ECO "B46"]
+[EndDate "2026.10.16"]
+
+1. e4 c5 2. Nf3 e6 3. Nc3 Nc6 4. d4 cxd4 5. Nxd4 a6 6. Nxc6 bxc6 7. Bd3 d5 8.
+O-O Nf6 9. Qf3 e5 10. Qg3 Qe7 11. exd5 cxd5 12. Re1 e4 13. Nxd5 Nxd5 14. Bxe4 h5
+15. Bg5 h4 16. Bxh4 Qxh4 17. Bxd5+ Be7 18. Bxa8 Qxg3 19. hxg3 Kf8 20. Bd5 Bg4
+21. Re4 Bf5 22. Re3 Bc5 23. Rf3 Rh5 24. Bxf7 Kxf7 25. g4 Rg5 26. Rd1 g6 27. gxf5
+Kf6 28. Rd5 Be7 29. fxg6+ Kxg6 30. Rg3 Rxg3 31. fxg3 Bg5 32. Ra5 Bd8 33. Rxa6+
+Kf5 34. b4 Be7 35. b5 Bc5+ 36. Kf1 Bd4 37. b6 Bxb6 38. Rxb6 Kg4 39. Rb5 Kxg3 40.
+Rb4 Kh2 41. Rd4 Kg3 42. a3 Kh2 43. c3 Kg3 44. Ra4 Kh2 45. Kf2 Kh1 46. Rh4#
+1-0
+
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.16"]
+[Round "?"]
+[White "null"]
+[Black "Super Grandmaster"]
+[Result "1-0"]
+[BlackElo "2900"]
+[WhiteElo "null"]
+[Termination "by checkmate"]
+[ECO "C00"]
+[EndDate "2026.10.16"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. Nf3 c5 6. dxc5 Nc6 7. Bf4 Bxc5 8. Bd3
+f6 9. exf6 Qxf6 10. Bg3 O-O 11. O-O Nd4 12. Nxd4 Bxd4 13. Qd2 Nc5 14. Bb5 a6 15.
+Be2 Bd7 16. Bf3 Rac8 17. Nxd5 exd5 18. c3 Ne4 19. Bxe4 dxe4 20. cxd4 Be6 21. d5
+Rcd8 22. d6 h5 23. h4 Qf5 24. Rfc1 b5 25. Rc6 Rd7 26. Rxa6 b4 27. Qxb4 e3 28.
+fxe3 Qg6 29. Kh2 Bd5 30. Ra5 Be6 31. Rc1 Rdf7 32. Rc7 Rd7 33. Rg5 Qf7 34. Qe4
+Bxa2 35. Be5 Rxc7 36. Bxg7 Rfc8 37. dxc7 Qe6 38. Qf3 Qe7 39. Bf6+ Kf8 40. Bxe7+
+Kxe7 41. Qe4+ Kd6 42. Qd4+ Ke7 43. Re5+ Be6 44. b3 Kf7 45. Qf4+ Ke7 46. Qb4+ Kf6
+47. Qf4+ Ke7 48. Qf5 Kd7 49. Qe4 Rxc7 50. Rxe6 Rc1 51. Qd5+ Kc8 52. Re8+ Kc7 53.
+Re7+ Kb6 54. b4 Rc7 55. Qa5+ Kc6 56. Qa6+ Kd5 57. Qe6# 
+1-0
+
+[Event "Play vs Bot"]
+[Site "Chess.com"]
+[Date "2026.10.25"]
+[Round "?"]
+[White "null"]
+[Black "Maximum"]
+[Result "1-0"]
+[BlackElo "3200"]
+[WhiteElo "null"]
+[Termination "by checkmate"]
+[ECO "D37"]
+[EndDate "2026.10.25"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Nc3 Be7 5. Bf4 O-O 6. e3 Nbd7 7. Bd3 dxc4 8.
+Bxc4 Nb6 9. Bd3 Nfd5 10. Be5 f6 11. Bg3 Nxc3 12. bxc3 c5 13. dxc5 Bxc5 14. O-O
+Bd7 15. Qc2 f5 16. Rae1 Qe8 17. Be5 Ba4 18. Qe2 Nd7 19. Bd4 Bc6 20. e4 f4 21. a4
+e5 22. Nxe5 Nxe5 23. Bxc5 f3 24. Qe3 fxg2 25. Kxg2 Rf3 26. Qe2 Rxd3 27. Bd4 Rd8
+28. Kh1 R8xd4 29. cxd4 Rxd4 30. f3 Rxa4 31. Qe3 Bb5 32. Rg1 Qf7 33. Rg3 Ra2 34.
+Rd1 h5 35. Rdg1 Be2 36. Rxg7+ Qxg7 37. Qb3+ Kh8 38. Rxg7 Ra1+ 39. Kg2 Bxf3+ 40.
+Kf2 Kxg7 41. Qd5 Nc6 42. Kxf3 Rf1+ 43. Kg2 Rf7 44. Qg5+ Kf8 45. Qxh5 a5 46. Qh8+
+Ke7 47. h4 Kd6 48. h5 Rf4 49. h6 Rxe4 50. h7 Re2+ 51. Kg3 Re3+ 52. Kh4 b5 53.
+Qf8+ Kc7 54. h8=Q Re4+ 55. Kg5 Re5+ 56. Kf6 b4 57. Qa8 Kb6 58. Qhc8 Kc5 59.
+Qaxc6+ Kd4 60. Qg4+ Ke3 61. Qc1+ Kd3 62. Qgc4# 
+1-0
+
