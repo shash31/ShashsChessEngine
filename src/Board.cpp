@@ -226,74 +226,73 @@ void Board::generate_pseudo_legal_moves(MoveList& move_list, bool capturesOnly) 
     }
 }
 
+// int Board::see(Square sq) {
+//     int value = 0;
 
-int Board::see(Square sq) {
-    int value = 0;
+//     // Getting smallest value attacker
+//     PieceType piece = PIECE_TYPE_NA;
+//     U64 from = 0ULL;
+//     if (PAWN_ATTACKS[oppSide][sq] & piece_type_bb[turn][PAWN]) {
+//         piece = PAWN; 
+//         from = PAWN_ATTACKS[oppSide][sq] & piece_type_bb[turn][PAWN];
+//     }
+//     else if (KNIGHT_ATTACKS[sq] & piece_type_bb[turn][KNIGHT]) {
+//         piece = KNIGHT;
+//         from = KNIGHT_ATTACKS[sq] & piece_type_bb[turn][KNIGHT];
+//     }
+//     else if (get_bishop_attacks(sq, occupancy[BOTH]) & piece_type_bb[turn][BISHOP]) {
+//         piece = BISHOP;
+//         from = get_bishop_attacks(sq, occupancy[BOTH]) & piece_type_bb[turn][BISHOP];
+//     }
+//     else if (get_rook_attacks(sq, occupancy[BOTH]) & piece_type_bb[turn][ROOK]) {
+//         piece = ROOK;
+//         from = get_rook_attacks(sq, occupancy[BOTH]) & piece_type_bb[turn][ROOK];
+//     }
+//     else if ((get_bishop_attacks(sq, occupancy[BOTH]) | get_rook_attacks(sq, occupancy[BOTH])) & piece_type_bb[turn][QUEEN]) {
+//         piece = QUEEN;
+//         from = (get_bishop_attacks(sq, occupancy[BOTH]) | get_rook_attacks(sq, occupancy[BOTH])) & piece_type_bb[turn][QUEEN];
+//     }
+//     else if (KING_ATTACKS[sq] & piece_type_bb[turn][KING]) {
+//         piece = KING;
+//         from = KING_ATTACKS[sq] & piece_type_bb[turn][KING];
+//     }
+//     Square from_sq = static_cast<Square>(std::countr_zero(from)); // In case there are multiple pieces of the same type attacking the square, we only pick one
 
-    // Getting smallest value attacker
-    PieceType piece = PIECE_TYPE_NA;
-    U64 from = 0ULL;
-    if (PAWN_ATTACKS[oppSide][sq] & piece_type_bb[turn][PAWN]) {
-        piece = PAWN; 
-        from = PAWN_ATTACKS[oppSide][sq] & piece_type_bb[turn][PAWN];
-    }
-    else if (KNIGHT_ATTACKS[sq] & piece_type_bb[turn][KNIGHT]) {
-        piece = KNIGHT;
-        from = KNIGHT_ATTACKS[sq] & piece_type_bb[turn][KNIGHT];
-    }
-    else if (get_bishop_attacks(sq, occupancy[BOTH]) & piece_type_bb[turn][BISHOP]) {
-        piece = BISHOP;
-        from = get_bishop_attacks(sq, occupancy[BOTH]) & piece_type_bb[turn][BISHOP];
-    }
-    else if (get_rook_attacks(sq, occupancy[BOTH]) & piece_type_bb[turn][ROOK]) {
-        piece = ROOK;
-        from = get_rook_attacks(sq, occupancy[BOTH]) & piece_type_bb[turn][ROOK];
-    }
-    else if ((get_bishop_attacks(sq, occupancy[BOTH]) | get_rook_attacks(sq, occupancy[BOTH])) & piece_type_bb[turn][QUEEN]) {
-        piece = QUEEN;
-        from = (get_bishop_attacks(sq, occupancy[BOTH]) | get_rook_attacks(sq, occupancy[BOTH])) & piece_type_bb[turn][QUEEN];
-    }
-    else if (KING_ATTACKS[sq] & piece_type_bb[turn][KING]) {
-        piece = KING;
-        from = KING_ATTACKS[sq] & piece_type_bb[turn][KING];
-    }
-    Square from_sq = static_cast<Square>(std::countr_zero(from)); // In case there are multiple pieces of the same type attacking the square, we only pick one
+//     if (piece != PIECE_TYPE_NA) {
+//         // Making pseudo capture
+//         Piece captured_piece = grid[sq];
+//         PieceType captured_piece_type = char_to_piece(captured_piece);
+//         grid[sq] = grid[from_sq];
+//         grid[from_sq] = NO_PIECE;
+//         U64 move_mask = (1ULL << from_sq) | (1ULL << sq);
+//         piece_type_bb[turn][piece] ^= move_mask;
+//         clear_bit(piece_type_bb[oppSide][captured_piece_type], sq);
+//         occupancy[turn] ^= move_mask;
+//         clear_bit(occupancy[oppSide], sq);
+//         clear_bit(occupancy[BOTH], from_sq);
+//         std::swap(turn, oppSide);
 
-    if (piece != PIECE_TYPE_NA) {
-        // Making pseudo capture
-        Piece captured_piece = grid[sq];
-        PieceType captured_piece_type = char_to_piece(captured_piece);
-        grid[sq] = grid[from_sq];
-        grid[from_sq] = NO_PIECE;
-        U64 move_mask = (1ULL << from_sq) | (1ULL << sq);
-        piece_type_bb[turn][piece] ^= move_mask;
-        clear_bit(piece_type_bb[oppSide][captured_piece_type], sq);
-        occupancy[turn] ^= move_mask;
-        clear_bit(occupancy[oppSide], sq);
-        clear_bit(occupancy[BOTH], from_sq);
-        std::swap(turn, oppSide);
-
-        value = std::max(0, see_values[captured_piece_type] - see(sq));
+//         value = std::max(0, see_values[captured_piece_type] - see(sq));
         
-        // std::println("Smallest value attacker: {}", static_cast<int>(piece));
-        // std::println("From: {}", getStringFromSquare(from_sq));
-        // std::println("Capturing: {}", static_cast<char>(captured_piece));
-        // std::println("Current value: {}", value);
-        // std::println();
+//         // std::println("Smallest value attacker: {}", static_cast<int>(piece));
+//         // std::println("From: {}", getStringFromSquare(from_sq));
+//         // std::println("Capturing: {}", static_cast<char>(captured_piece));
+//         // std::println("Current value: {}", value);
+//         // std::println();
 
-        // Undoing pseudo capture
-        std::swap(turn, oppSide);
-        grid[from_sq] = grid[sq];
-        grid[sq] = captured_piece;
-        piece_type_bb[turn][piece] ^= move_mask;
-        set_bit(piece_type_bb[oppSide][captured_piece_type], sq);
-        occupancy[turn] ^= move_mask;
-        set_bit(occupancy[oppSide], sq);
-        set_bit(occupancy[BOTH], from_sq);
-    }
+//         // Undoing pseudo capture
+//         std::swap(turn, oppSide);
+//         grid[from_sq] = grid[sq];
+//         grid[sq] = captured_piece;
+//         piece_type_bb[turn][piece] ^= move_mask;
+//         set_bit(piece_type_bb[oppSide][captured_piece_type], sq);
+//         occupancy[turn] ^= move_mask;
+//         set_bit(occupancy[oppSide], sq);
+//         set_bit(occupancy[BOTH], from_sq);
+//     }
 
-    return value;
-}
+//     return value;
+// }
 
 U64 Board::attackers_to(Square to, U64 occ) {
     U64 attackers = 0ULL;
@@ -386,12 +385,12 @@ void Board::score_moves(MoveList &move_list, Move tt_move, int search_ply) {
             }
 
             // Has to be CAPTURE or EP_CAPTURE now
-            // move_list.scores[i] = 1'000'000 + mvv_lva;
-            if ((see_values[captured_type] >= see_values[moving_piece]) || see_ge(move, 0)) 
-                move_list.scores[i] = 1'000'000 + mvv_lva; // above killers
-            else 
-                move_list.scores[i] = -1'000'000 + mvv_lva; // bad captures: after all quiets
-                // move_list.scores[i] = 700'000 + mvv_lva; // bad captures: after killers
+            move_list.scores[i] = 1'000'000 + mvv_lva;
+            // if ((see_values[captured_type] >= see_values[moving_piece]) || see_ge(move, 0)) 
+            //     move_list.scores[i] = 1'000'000 + mvv_lva; // above killers
+            // else 
+            //     move_list.scores[i] = -1'000'000 + mvv_lva; // bad captures: after all quiets
+            //     // move_list.scores[i] = 700'000 + mvv_lva; // bad captures: after killers
 
         } else if (flag >= 8) { // Can only be regular promotions(8-11) and not capture promotions    
             if (flag == Q_PROM) move_list.scores[i] = 1'200'000;

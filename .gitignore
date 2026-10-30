@@ -1,15 +1,22 @@
+# Executable engine/referee files
 test
+see_engine
 rfp_engine
+stockfish
+tofiks2802
+Qapla3015
+fastchess
+
+# Debugging and testing data files
 lichess_db_puzzle.csv
 lichess_db_puzzle.csv.zst
 8moves_v3.pgn
-stockfish
-tofiks2802
-see_engine
-Qapla3015
-fastchess
 *.dSYM/
 *.txt
 *.sh
+sprt*.pgn
+config.json 
+
+# Other/miscellaneous files
 *.pch
 .DS_Store

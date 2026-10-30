@@ -1,7 +1,7 @@
 import subprocess
 from playwright.sync_api import sync_playwright
 
-PLAYING_BLACK = False
+PLAYING_BLACK = True
 TIME_PER_MOVE = 10000 # in ms
 
 OPP_DIFFICULTY = "25"
@@ -57,7 +57,7 @@ def make_move(page):
     """
     Grab board state from browser game, feed to engine, parse engine move and make move on page's board
     """
-    fen = page.evaluate('game.fen')
+    fen = page.evaluate('game.getFEN()')
     print(fen)
 
     print('Sending move to engine')

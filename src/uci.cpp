@@ -24,12 +24,15 @@ TODOs:
 
 
 Compile commands:
-    - Production build: clang++ -std=c++23 -O3 -flto -mcpu=native ChessEngine/*.cpp -o myengine
+    - Production build: clang++ -std=c++23 -O3 -flto -mcpu=native src/*.cpp -o myengine
     - WASM build: "em++ src/ChessEngine/*.cpp -std=c++23 -O3 -s INITIAL_MEMORY=134217728 -s ALLOW_MEMORY_GROWTH=1 -s MODULARIZE=1 -s EXPORT_ES6=1 -s EXPORTED_FUNCTIONS=_get_best_move -s EXPORTED_RUNTIME_METHODS=ccall -o src/ChessEngine.js && mv src/ChessEngine.wasm public/"
-    - Debug/building compile(slow only use to catch bugs): clang++ -std=c++23 -O0 -g -Wall -Wextra -fno-omit-frame-pointer -fsanitize=address,undefined ChessEngine/*.cpp -o myengine_san
+    - Debug/building compile(slow only use to catch bugs): clang++ -std=c++23 -O0 -g -Wall -Wextra -fno-omit-frame-pointer -fsanitize=address,undefined src/*.cpp -o myengine_san
     - Catch uninitialized variables (add to the debug build): -ftrivial-auto-var-init=pattern
-    - // Profiling (to see where time goes, e.g. in Instruments): clang++ -std=c++23 -O2 -g -fno-omit-frame-pointer ChessEngine/*.cpp -o myengine_prof
+    - // Profiling (to see where time goes, e.g. in Instruments): clang++ -std=c++23 -O2 -g -fno-omit-frame-pointer src/*.cpp -o myengine_prof
     - Data races, if you add threads: -O1 -g -fsanitize=thread. This can’t be combined with the address sanitizer.
+
+Testing commands:
+    - caffeinate -di ./sprt.sh 2>&1 | tee sprt_log.txt
 */
 
 std::thread searchThread;
@@ -47,6 +50,10 @@ constexpr const char* TEST_FENS[] = {
     "1k1r4/pp1b1R2/3q2pp/4p3/2B5/4Q3/PPP2B2/2K5 b - - 0 1",
     "rnbqkb1r/pp1p1pPp/8/2p1pP2/1P1P4/3P3P/P1P1P3/RNBQKBNR w KQkq e6 0 1"
 };
+// Interesting positions:
+
+// r1bqr1k1/p1p2ppp/1p2p3/b2P4/Q1Pn4/B1N3P1/P2P1PBP/R4RK1 w - - 0 15 ; Moves: d5e6 c8e6
+// Sacking the exchange is good for black as white's kingside light squares are too weak after losing its light squared bishop 
 
 void clearTablesAndHistory() {
     tt.clear();

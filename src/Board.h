@@ -83,7 +83,7 @@ struct Board {
 
     void generate_pseudo_legal_moves(MoveList &move_list, bool capturesOnly=false);
 
-    int see(Square sq);
+    // int see(Square sq);
 
     U64 attackers_to(Square to, U64 occ);
 
